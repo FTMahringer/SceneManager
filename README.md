@@ -5,6 +5,9 @@ This is the first release of my Library SceneManager.
 It is for managing fxmls in the Scenes Enum
 and showing and changing those Scenes.
 
+You need to implement the code for it to function properly. 
+In the enum, please put your own scenes infos.
+
 
 ## Authors
 
