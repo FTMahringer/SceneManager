@@ -46,7 +46,7 @@ public class Starter extends Application {
 ```
 
 In the Scenes class, each scene is managed like this:
-```
+```java
     MAIN_MENU("hello-view.fxml", "Menu")
 ```
 The Scenes class is an enum class, that just holds al the used scenes, that are openable windows. (not included scenes in fxmls)
