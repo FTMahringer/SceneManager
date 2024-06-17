@@ -50,6 +50,7 @@ In the Scenes class, each scene is managed like this:
     MAIN_MENU("hello-view.fxml", "Menu")
 ```
 The Scenes class is an enum class, that just holds al the used scenes, that are openable windows. (not included scenes in fxmls)
+The path to the fxmls starts from the ressource folder of the project
 
 ## Used By
 
