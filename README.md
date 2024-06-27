@@ -34,19 +34,25 @@ Please see the SceneManager and Scenes.java files, and copy everything inside in
 ### To start using it, please use like this:
 ```java
 public class Starter extends Application {
-    @Override
-    public void start(Stage stage) throws Exception {
-        SceneManager sceneManager = new SceneManager(stage);
-        sceneManager.setScene(Scenes.MAIN_MENU);
-        sceneManager.setSceneSize(800, 600);
-        sceneManager.showScene();
+
+    static Stage primaryStage;
+    public static Stage getPrimaryStage() {
+        return primaryStage;
     }
 
-    public static void main(String[] args) {
-        launch(args);
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        Starter.primaryStage = primaryStage;
+        SceneManager sceneManager = new SceneManager(primaryStage);
+        sceneManager.setScene(Scenes.LOGIN);
+        sceneManager.showScene();
     }
 }
 ```
+The getPrimaryStage method is for later, when you want to change scenes in the programm, to have it all run on one stage.
+
+It has one problem. The scene doesnt get centered on the screen. It gets the center location from the previous scene. And if that was smaller, then it gets offset.
+
 
 In the Scenes class, each scene is managed like this:
 ```java
