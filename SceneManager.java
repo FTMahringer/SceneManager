@@ -1,5 +1,4 @@
-package at.fmahring.scenemanager;
-
+import at.ftmahringer.frameworkfirst.utils.Scenes;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -15,14 +14,14 @@ import java.util.Deque;
 public class SceneManager {
     private final Stage primaryStage;
     private final BorderPane rootLayout;
-    private final Deque<Parent> sceneStack = new ArrayDeque<>();
+    private static final Deque<Parent> sceneStack = new ArrayDeque<>();
 
     private static String PopUpStageTitle;
 
     public SceneManager(Stage primaryStage) {
         this.primaryStage = primaryStage;
         //primaryStage.initStyle(StageStyle.UNDECORATED);
-        this.rootLayout = new BorderPane();
+        rootLayout = new BorderPane();
     }
 
     public void setScene(Scenes fxmlPath) {
@@ -31,7 +30,7 @@ public class SceneManager {
             return;
         }
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath.getPath()));
+            FXMLLoader loader = new FXMLLoader(SceneManager.class.getResource(fxmlPath.getPath()));
             Parent scene = loader.load();
             primaryStage.setTitle(fxmlPath.getTitle());
             sceneStack.push(scene);
