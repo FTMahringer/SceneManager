@@ -27,7 +27,7 @@ In the enum, please put your own scenes infos.
 
 To use this library, please create three classes:
 
-### SceneManager.java and Scenes.java
+### SceneManager.java, Scenes.java and CustomAlerts
 ```
 Please see the SceneManager and Scenes.java files, and copy everything inside into the created file.
 ```
@@ -54,6 +54,7 @@ The getPrimaryStage method is for later, when you want to change scenes in the p
 
 It has one problem. The scene doesnt get centered on the screen. It gets the center location from the previous scene. And if that was smaller, then it gets offset.
 
+The CustomAlerts, are rather intutive and don't really need an explanation.
 
 In the Scenes class, each scene is managed like this:
 ```java
@@ -62,10 +63,6 @@ In the Scenes class, each scene is managed like this:
 The Scenes class is an enum class, that just holds al the used scenes, that are openable windows. (not included scenes in fxmls)
 
 The path to the fxmls starts from the ressource folder of the project
-
-### CustomAlerts.java
-
-Please get the code from the file uploaded.
 
 
 
