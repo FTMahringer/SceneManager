@@ -1,6 +1,6 @@
 # SceneManager
 
-This is the first release of my Library SceneManager.
+This is the first release of my Library SceneManager and CustomAlerts.
 
 It is for managing fxmls in the Scenes Enum
 and showing and changing those Scenes.
@@ -20,11 +20,12 @@ In the enum, please put your own scenes infos.
 - Switching scenes on the go.
 - Creating popup windows, that prevent the closing of the "actual" window.
 - Going back to the previous window
+- Getting Alerts running and showing easier
 
 
 # Usage/Examples
 
-To use this library, please create two classes:
+To use this library, please create three classes:
 
 ### SceneManager.java and Scenes.java
 ```
@@ -61,6 +62,12 @@ In the Scenes class, each scene is managed like this:
 The Scenes class is an enum class, that just holds al the used scenes, that are openable windows. (not included scenes in fxmls)
 
 The path to the fxmls starts from the ressource folder of the project
+
+### CustomAlerts.java
+
+Please get the code from the file uploaded.
+
+
 
 ## Used By
 
