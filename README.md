@@ -65,16 +65,4 @@ The Scenes class is an enum class, that just holds al the used scenes, that are 
 The path to the fxmls starts from the ressource folder of the project
 
 
-
-## Used By
-
-This small library is currently used by my class for various javafx related projects, like:
-
-- QuizApp
-- Minesweeper
-- Checkers
-
-Just some small projects (or games) made in school.
-
-
 Please tell me if i should add more functionalities to this small helper Programm.
