@@ -105,10 +105,6 @@ public class SceneManager {
             popUpStage.close();
             popUpStage = null;
         }
-
-        if (escmenu.equals(Scenes.ESCMENU)) {
-            GameController.resume();
-        }
     }
 
     public static void setPopUpScene(Scenes fxml) throws IOException {
