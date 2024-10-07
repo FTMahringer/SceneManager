@@ -1,13 +1,12 @@
 # SceneManager
 
-This is the first release of my Library SceneManager and CustomAlerts.
+This is the release of my Library SceneManager and CustomAlerts.
 
 It is for managing fxmls in the Scenes Enum
 and showing and changing those Scenes.
 
 You need to implement the code for it to function properly. 
 In the enum, please put your own scenes infos.
-
 
 ## Authors
 
@@ -49,7 +48,7 @@ In the Scenes class, each scene is managed like this:
 ```java
     MAIN_MENU("hello-view.fxml", "Menu")
 ```
-The Scenes class is an enum class, that just holds al the used scenes, that are openable windows. (not included scenes in fxmls)
+The Scenes class is an enum class, that just holds all the used scenes, that are openable windows.
 
 The path to the fxmls starts from the ressource folder of the project
 
