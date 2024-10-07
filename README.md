@@ -25,9 +25,9 @@ In the enum, please put your own scenes infos.
 
 # Usage/Examples
 
-To use this library, please create three classes:
+Tu use the SceneManager, you need to create two classes:
 
-### SceneManager.java, Scenes.java and CustomAlerts
+### SceneManager.java and Scenes.java
 ```
 Please see the SceneManager and Scenes.java files, and copy everything inside into the created file.
 ```
@@ -35,24 +35,13 @@ Please see the SceneManager and Scenes.java files, and copy everything inside in
 ### To start using it, please use like this:
 ```java
 public class Starter extends Application {
-
-    static Stage primaryStage;
-    public static Stage getPrimaryStage() {
-        return primaryStage;
-    }
-
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Starter.primaryStage = primaryStage;
-        SceneManager sceneManager = new SceneManager(primaryStage);
-        sceneManager.setScene(Scenes.LOGIN);
-        sceneManager.showScene();
+        SceneManager.getInstance().showScene(Scenes.MAIN_MENU);
     }
 }
 ```
-The getPrimaryStage method is for later, when you want to change scenes in the programm, to have it all run on one stage.
 
-It has one problem. The scene doesnt get centered on the screen. It gets the center location from the previous scene. And if that was smaller, then it gets offset.
 
 The CustomAlerts, are rather intutive and don't really need an explanation.
 
