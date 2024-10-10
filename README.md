@@ -41,6 +41,20 @@ public class Starter extends Application {
 }
 ```
 
+# Test if scene/popup is open
+
+To test, which scene or popup, is open
+Or to test if the desired scene/popup is open, use:
+
+```java
+if (getSceneStack().peek().equals(Scenes.GAME) && popUpSceneStack.peek().equals(Scenes.ESCMENU)) {
+            GameController.resume();
+}
+```
+This is just for example, to show that soemthing like this would be possible.
+
+<br>
+<br>
 
 The CustomAlerts, are rather intutive and don't really need an explanation.
 
